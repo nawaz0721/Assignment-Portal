@@ -110,15 +110,12 @@ for(var i = 0; i < assignmentArray.length; i++){
             <div class="atropos-rotate">
                 <!-- inner container (required) -->
                 <div class="atropos-inner">
-                    <div class="card" style="width: 18rem;">
+                <a  href="${assignmentArray[i].hostedLink}">
+                    <div class="card" style="width: 22rem;">
                         <img src="${assignmentArray[i].background}" class="card-img-top" alt="...">
-                        <h1 data-atropos-offset="5" class="card-title">${assignmentArray[i].title}</h1>
-                        <div class="card-body">
-                            <p class="card-text" data-atropos-offset="4">${assignmentArray[i].description}</p>
-                            <a data-atropos-offset="4" href="${assignmentArray[i].githubLink}" class="btn btn-primary btn-sm">Github Code</a>
-                            <a data-atropos-offset="4" href="${assignmentArray[i].hostedLink}" class="btn btn-outline-warning btn-sm">Hosting link</a>
-                        </div>
+                        <h1 data-atropos-offset="10" class="card-title">${assignmentArray[i].title}</h1>
                     </div>
+                </a>    
                 </div>
             </div>
         </div>
@@ -127,6 +124,9 @@ for(var i = 0; i < assignmentArray.length; i++){
     assignmentList.innerHTML += div;
 }
 
+//<p class="card-text" data-atropos-offset="4">${assignmentArray[i].description}</p>
+//<a data-atropos-offset="4" href="${assignmentArray[i].githubLink}" class="btn btn-primary btn-sm">Github Code</a>
+//<a data-atropos-offset="4" href="${assignmentArray[i].hostedLink}" class="btn btn-outline-warning btn-sm">Hosting link</a>
 // Initialize Atropos effect for each card
 document.querySelectorAll('.my-atropos').forEach(atroposEl => {
     Atropos({
