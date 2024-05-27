@@ -101,19 +101,24 @@ var assignmentList = document.getElementById('allAssignment');
 
 for(var i = 0; i < assignmentArray.length; i++){
     var div = `
-    <div class="flip-container">
-        <div class="flipper">
-            <div class="front" style="background-image: url(${assignmentArray[i].background})">
-                <h2>${[i + 1]}</h4>
-                <h1 class="text-shadow">${assignmentArray[i].title}</h1>
-                <h4>Date: ${assignmentArray[i].date}</h4>
-            </div>
-            <div class="back">
-                <h2>${assignmentArray[i].title}</h2>
-                <p>${assignmentArray[i].description}</p>
-                <div style="display:flex, flex-wrap: wrap">
-                <button><a href="${assignmentArray[i].githubLink}">View Code on Github</a></button>
-                <button><a href="${assignmentArray[i].hostedLink}">Hosted link</a></button>
+            
+     <!-- main Atropos container (required), add your custom class here -->
+    <div class="atropos my-atropos">
+        <!-- scale container (required) -->
+        <div class="atropos-scale">
+            <!-- rotate container (required) -->
+            <div class="atropos-rotate">
+                <!-- inner container (required) -->
+                <div class="atropos-inner">
+                    <div class="card" style="width: 18rem;">
+                        <img src="${assignmentArray[i].background}" class="card-img-top" alt="...">
+                        <h1 data-atropos-offset="5" class="card-title">${assignmentArray[i].title}</h1>
+                        <div class="card-body">
+                            <p class="card-text" data-atropos-offset="4">${assignmentArray[i].description}</p>
+                            <a data-atropos-offset="4" href="${assignmentArray[i].githubLink}" class="btn btn-primary btn-sm">Github Code</a>
+                            <a data-atropos-offset="4" href="${assignmentArray[i].hostedLink}" class="btn btn-outline-warning btn-sm">Hosting link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,4 +127,16 @@ for(var i = 0; i < assignmentArray.length; i++){
     assignmentList.innerHTML += div;
 }
 
-
+// Initialize Atropos effect for each card
+document.querySelectorAll('.my-atropos').forEach(atroposEl => {
+    Atropos({
+        el: atroposEl,
+        activeOffset: 70,
+        rotateXMax: 20,
+        rotateYMax: 20,
+        shadow: true,
+        shadowOffset: 50,
+        shadowScale: .95,
+        highlight: true,
+    });
+});
