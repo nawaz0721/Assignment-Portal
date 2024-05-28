@@ -13,6 +13,13 @@ h1 {
     font-family: "Poetsen One", sans-serif;
     margin-top: 20px;
     margin-left: 15px;
+    font-size: 55px;
+    color: white;
+}
+h2 {
+    font-family: "Poetsen One", sans-serif;
+    margin-top: 20px;
+    margin-left: 15px;
     font-size: 45px;
     color: white;
 }
@@ -21,7 +28,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 25px 30px 0px 20px;
+    margin: 35px 30px 0px 20px;
     column-gap: 220px;
     row-gap: 50px;
 }

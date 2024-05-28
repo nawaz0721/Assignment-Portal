@@ -113,7 +113,7 @@ for(var i = 0; i < assignmentArray.length; i++){
                 <a  href="${assignmentArray[i].hostedLink}">
                     <div class="card" style="width: 22rem;">
                         <img src="${assignmentArray[i].background}" class="card-img-top" alt="...">
-                        <h1 data-atropos-offset="10" class="card-title">${assignmentArray[i].title}</h1>
+                        <h2 data-atropos-offset="10" class="card-title">${assignmentArray[i].title}</h2>
                     </div>
                 </a>    
                 </div>
