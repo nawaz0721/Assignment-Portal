@@ -1,6 +1,6 @@
 var assignmentArray = [
     {
-        background: "images/local.jpeg)",
+        background: "images/local.webp",
         title: "Local Stroage",
         date: "05-JUNE-2024",
         description: "Student Attendance Portal using Javascript",
