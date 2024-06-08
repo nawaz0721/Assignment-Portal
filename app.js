@@ -1,5 +1,13 @@
 var assignmentArray = [
     {
+        background: "images/local.jpeg)",
+        title: "Local Stroage",
+        date: "05-JUNE-2024",
+        description: "Student Attendance Portal using Javascript",
+        githubLink: "https://github.com/nawaz0721/local-Storage",
+        hostedLink: "https://nawaz0721.github.io/local-Storage/",
+    },
+    {
         background: "images/cards.avif",
         title: "3D Cards",
         date: "28-May-2024",
