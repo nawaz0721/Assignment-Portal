@@ -1,5 +1,21 @@
 var assignmentArray = [
     {
+        background: "images/weather\ app.jpeg",
+        title: "Weather App",
+        date: "22-JUNE-2024",
+        description: "Student Attendance Portal using Javascript",
+        githubLink: "https://github.com/nawaz0721/Weather-App",
+        hostedLink: "https://nawaz0721.github.io/Weather-App/",
+    },
+    {
+        background: "images/E-Commerce-Website.jpg",
+        title: "E-Commerce-Website",
+        date: "20-JUNE-2024",
+        description: "Student Attendance Portal using Javascript",
+        githubLink: "https://github.com/nawaz0721/-E-Commerce-Website",
+        hostedLink: "https://nawaz0721.github.io/-E-Commerce-Website/",
+    },
+    {
         background: "images/local.webp",
         title: "Local Stroage",
         date: "05-JUNE-2024",
